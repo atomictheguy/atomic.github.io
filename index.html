@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+        <title>ayden's little thing</title>
+
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+    </head>
+    <body>
+<!-- WATCH OUT BACKGROUND STUFF OH NO -->
+
+<svg id="cubes" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <pattern id="plaid" width="256" height="192" patternUnits="userSpaceOnUse" patternTransform="scale(0.5 0.5)">
+    <g transform="translate(0 -256)">
+    <rect width="512" height="512" fill="steelblue" style="border:1px solid red" />
+
+    <use href="#cube-top" x="0" y="64" />
+    <use href="#cube-top" x="128" y="64" />
+    <use href="#cube-middle" x="-64" y="96" />
+    <use href="#cube-middle" x="64" y="96" />
+    <use href="#cube-middle" x="192" y="96" />
+    <use href="#cube-top" x="0" y="256" />
+    <use href="#cube-top" x="128" y="256" />
+    <use href="#cube-middle" x="-64" y="288" />
+    <use href="#cube-middle" x="64" y="288" />
+    <use href="#cube-middle" x="192" y="288" />
+    <use href="#cube-top" x="0" y="448" />
+    <use href="#cube-top" x="128" y="448" />
+    <use href="#cube-middle" x="-64" y="480" />
+    <use href="#cube-middle" x="64" y="480" />
+    <use href="#cube-middle" x="192" y="480" />
+
+<!--     <rect width="512" height="512" fill="url(#fog)" /> -->
+
+    <defs>
+      <g id="cube-top">
+        <path fill="rgba(17, 17, 24, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" values="M64 64 L0 32 L0 96 L64 128Z;
+						M64 64 L0 32 L0 32 L64 64Z;
+						M64 64 L0 32 L0 32 L64 64Z; 	
+						M64 64 L0 32 L0 32 L64 64Z" />
+        </path>
+        <path fill="rgba(23, 65, 79, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" values="M64 64 L128 32 L128 96 L64 128Z;
+						M64 64 L128 32 L128 32 L64 64Z;
+						M64 64 L128 32 L128 32 L64 64Z;
+						M64 64 L128 32 L128 32 L64 64Z" />
+        </path>
+        <path fill="rgba(17, 17, 24, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" keyTimes="0;.33;1" values="M64 256 L0 224 L0 224 L64 256Z;
+						M64 192 L0 160 L0 224 L64 256Z;
+						M64 64 L0 32 L0 96 L64 128Z" />
+        </path>
+        <path fill="rgba(23, 65, 79, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" keyTimes="0;.33;1" values="M64 256 L128 224 L128 224 L64 256Z;
+						M64 192 L128 160 L128 224 L64 256Z;
+						M64 64 L128 32 L128 96 L64 128Z" />
+        </path>
+      </g>
+      <g id="cube-middle">
+        <path fill="rgba(23, 65, 79, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" values="M64 128 L128 96 L128 160 L64 192Z;
+						M64 64 L128 32 L128 96 L64 128Z;
+						M64 64 L128 32 L128 32 L64 64Z;
+						M64 64 L128 32 L128 32 L64 64Z" />
+        </path>
+        <path fill="rgba(17, 17, 24, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" values="M64 128 L0 96 L0 160 L64 192Z;
+						M64 64 L0 32 L0 96 L64 128Z;
+						M64 64 L0 32 L0 32 L64 64Z;
+						M64 64 L0 32 L0 32 L64 64Z" />
+        </path>
+        <path fill="rgba(23, 65, 79, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" values="M64 256 L128 224 L128 224 L64 256Z;
+						M64 256 L128 224 L128 224 L64 256Z;
+						M64 192 L128 160 L128 224 L64 256Z;
+						M64 128 L128 96 L128 160 L64 192Z" />
+        </path>
+        <path fill="rgba(17, 17, 24, 1)">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite" calcMode="linear" values="M64 256 L0 224 L0 224 L64 256Z;
+						M64 256 L0 224 L0 224 L64 256Z;
+						M64 192 L0 160 L0 224 L64 256Z;
+						M64 128 L0 96 L0 160 L64 192Z" />
+        </path>
+      </g>
+      <linearGradient id="fog" gradientTransform="rotate(90)">
+        <stop offset="0.4" style="stop-color:rgba(70,130,180,0)" />
+        <stop offset="1" style="stop-color:rgb(0, 0, 0)" />
+      </linearGradient>
+    </defs>
+    </g>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#plaid)" />
+</svg>
+</svg>
+
+        <div class="navbar">
+
+          <div>the goods</div>
+          <div>the news</div>
+          <div>the tunes</div>
+          <div><a href="what.html">the dvd<a></div>
+
+
+        </div>
+
+        <h1 id="titlecard">hi, im ayden</h1>
+          <p class="center">welcome to my website, read about me below:</p>
+
+        <div class="container">
+            
+            <header>
+            
+                
+              
+                
+            </header>
+
+            <nav>
+            <h3 class="center">stuff i like to do</h3>
+            <ul>
+            <li>make music for hours in a day</li>
+            <li>chit chat on various online platforms</li>
+            <li>be a <strong><em>total nerd</em></strong> and reccomend poeple non-entry level things</li>
+            <li>HATE the games i play yet still play them</li>
+            <li>listen and study music</li>
+        </ul>
+
+            </nav>
+            
+            <main>
+                
+                <h2 class="center" >about me</h2>
+        <p>Hi, I'm Ayden "atomictheguy" Jasi Matthews. I'm a computer geek who tends to do nothing in his room all day. I'm the type of person who has to be told what to do most of the time, and will refuse to make long term friendships with people. But I am very productive, and it shows in a lot of fields!</p>
+
+            </main>
+
+            <footer>ayden matthews, 2026</footer>
+
+        </div>
+
+
+<script src="./oneko stuff/oneko.js"></script>
+
+
+    </body>
+</html>
